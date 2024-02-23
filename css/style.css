@@ -1,0 +1,333 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --third-family: "Potta One", sans-serif;
+}
+
+
+
+/* COMMON CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid green; */
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,span,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+/* COMMON CSS */
+
+
+
+/* NAV BAR */
+#navMenu li a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: #353535;
+    text-transform: uppercase;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 0px;
+    position: relative;
+}
+
+
+#navMenu li a::before{
+    content:" ";
+    width: 0%;
+    height: 1px;
+    display: block;
+    background: #353535;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+#navMenu li:hover a::before{
+    width: 100%;
+}
+/* NAV BAR */
+
+
+/* BANNER */
+#banner{
+    padding-top: 66px;
+    padding-bottom: 144px;
+}
+.mouse{
+    align-items: center;
+}
+#banner .contents {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+} 
+#banner .contents h4{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #353535;
+    padding-bottom: 15px;
+}
+
+#banner .contents h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: #353535;
+    padding-bottom: 25px;
+}
+
+#banner .contents p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+    padding-bottom: 77px;
+}
+
+#banner .contact a {
+    padding: 16px 0px 15px 32px;
+    background-color: #FFCC00;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    width: 174px;
+    height: 63px;
+    margin: 0 20px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+
+}
+#banner .download a {
+    padding: 16px 0px 15px 32px;
+    background-color: #FFCC00;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    width: 174px;
+    height: 63px;
+    margin: 0 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: #353535;
+}
+
+#banner .contact a i{
+    padding: 6px 45px 6px 11px;
+}
+#banner .download a i{
+    padding: 6px 45px 6px 11px;
+}
+
+#banner .contact a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+#banner .download a:hover{
+    background-color: white;
+    color: #353535;
+    transition: 0.5s;
+}
+
+#banner .follow {
+    margin-top: 66px;
+}
+#banner .follow span{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    color: #353535;
+}
+#banner .follow a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #F4F3F3;
+    text-align: center;
+    line-height: 48px ;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+#banner .follow a:hover{
+    background-color: #000000;
+    color: white;
+}
+
+#banner .follow img{
+    margin-left: ;
+}
+/* BANNER */
+
+/* ABOUT SECTION */
+#about {
+    background-image: url(../images/aboutbg.png);
+
+    background-size: cover;
+
+}
+#about .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+#about .contents h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+    padding-bottom: 26px;
+}
+#about .contents p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    padding-bottom: 45px;
+}
+#about .contents  a {
+    padding: 16px 0px 15px 32px;
+    background-color: #FFCC00;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 16px;
+    width: 174px;
+    height: 63px;
+    margin: 0 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+}
+/* ABOUT SECTION */
+
+/* FOOTER */
+footer{
+    background-image: url('../images/footer.png');
+}
+
+.first-row{
+    padding-top: 71px;
+}
+
+footer .middle-content h4 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 200%;
+    color: #fff;
+}
+footer .middle-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: justify;
+    color: #bbb9b9;
+}
+
+footer .end-content a {
+    padding: 16px 0px 15px 32px;
+    background-color: #FFCC00;
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    width: 174px;
+    height: 63px;
+}
+
+footer .end-content a i{
+    padding: 5px 33px 5px 11px;
+}
+
+footer .end-content a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+footer .icons a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #484848;
+    text-align: center;
+    line-height: 48px ;
+    color: white;
+    transition: 5s;
+}
+
+footer .icons a:hover{
+    background-color: #FFCC00;
+}
+
+footer .second-row{
+    padding: 94px 0 85px 0;
+}
+
+.col-lg-5 a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: #fff;
+}    
+.col-lg-3 a{
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    color: #fff;
+}
+
+.col-lg-4 a{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    color: #fff;
+}
+
+.col-lg-4 a i {
+    margin: 0px 7px 0px 7px;
+}
+/* FOOTER */
